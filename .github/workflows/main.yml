@@ -16,4 +16,5 @@ jobs:
       with:
         java-version: ${{matrix.java}}  
     - run: java -version
-   
+    - name: Download all workflow run artifacts
+      uses: actions/download-artifact@v2
