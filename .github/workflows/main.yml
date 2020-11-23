@@ -17,6 +17,6 @@ jobs:
         java-version: ${{matrix.java}}  
     - run: java -version
     - name: Build with Ant
-      run: ant -noinput -buildfile build.xml
+      run: ant -noinput -Dbootstrap.url=http://deadlock.netbeans.org/hudson/job/nbms-and-javadoc/lastStableBuild/artifact/nbbuild/netbeans/harness/tasks.jar -Dautoupdate.catalog.url=http://updates.netbeans.org/netbeans/updates/8.0/uc/final/distribution/catalog.xml.gz -buildfile build.xml
     - name: Download all workflow run artifacts
       uses: actions/download-artifact@v2
