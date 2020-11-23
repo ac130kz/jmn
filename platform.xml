@@ -2,11 +2,6 @@
 <project name="PlatformSetup" basedir=".">
     <description>Sets up the platform used for building Music Notepad</description>
 
-   	<property name="bootstrap.url"
-          value="http://deadlock.netbeans.org/hudson/job/nbms-and-javadoc/lastStableBuild/artifact/nbbuild/netbeans/harness/tasks.jar"/>
-    <property name="autoupdate.catalog.url"
-          value="http://updates.netbeans.org/netbeans/updates/8.0/uc/final/distribution/catalog.xml.gz"/>
-
     <property name="platform.zip" value="nb65platform.zip" />
     <property name="platform.dir" value="nb65platform" />
 
